@@ -31,6 +31,6 @@ jobs:
         with:
           context: .
           build-contexts: |
-            nginx:1.19-alpine
+            alpine=docker-image://alpine:3.16
           push: true
           tags: user/app:latest
