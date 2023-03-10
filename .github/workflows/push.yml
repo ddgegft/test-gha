@@ -29,7 +29,8 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v4
         with:
-          context: C:\DATA\GITHUB\test-gha\
-          file: Dockerfile
+          context: .
+          build-contexts: |
+            nginx:1.19-alpine
           push: true
           tags: user/app:latest
