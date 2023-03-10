@@ -30,6 +30,7 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: .
+          File: Dockerfile
           build-contexts: |
             alpine=docker-image://alpine:3.16
           push: true
